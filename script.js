@@ -8,15 +8,15 @@ const firebaseConfig = {
     appId: "1:135447477359:web:8acc4c56ab1e7714c4e19a",
     measurementId: "G-WKRKWCHRWH"
   };
-  
-  
+
+
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
-  document.getElementById("message11").addEventListener("submit", sendMessage);
+  document.getElementById("message11").addEventListener("submit", sendMessage);                   //step-1
 //   document.getElementById("ll1").addEventListener("submit", like_fun);
-  
-  function sendMessage(e){
-  
+
+  function sendMessage(e){                                                                       //step-2
+
     e.preventDefault();
     const timestamp = Date.now();
     const messageInput = document.getElementById("commend");
@@ -26,17 +26,8 @@ const firebaseConfig = {
       message
     });
   }
-//   function like_fun(e)
-//   {
-//       document.getElementById("replay1").style.display = "none";
-//       e.preventDefault();
-//       const timestamp = Date.now();
-//       db.ref("likecount/"+timestamp).set({
-//           timestamp
-//       });
-//   }
-  
-  const fetchChat = db.ref("mess/");
+
+  const fetchChat = db.ref("mess/");                                                          //step-3
   fetchChat.on("child_added", function (snapshot) {
         const me = snapshot.val();
         var messs = `<ul>${me.message}</ul>`;
@@ -48,7 +39,7 @@ const firebaseConfig = {
     //     var like_coun = `${me.timestamp}`;
     //     document.getElementById("l1").innerHTML += like_coun;
     // })
-  
+
 
 // const l1_count = 0;
 // function count1()
@@ -71,7 +62,6 @@ const firebaseConfig = {
 //         document.getElementById("comment1").style.display = "none";
 //     }
 // }
-
 var coll = document.getElementsByClassName("replay_slide");
 var i;
 
