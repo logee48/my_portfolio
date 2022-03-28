@@ -58,10 +58,16 @@ body{
 }
 #b1, #b2
 {
-  font-size: 4vw;
+  font-size: 5vw;
+}
+#comment2
+{
+  font-size: 20px;
 }
 #replay1, #replay2
 {
+  position:relative;
+  right: 43%;
   font-size: 3vw;
   max-width: 300px;
   background-color: white;
@@ -70,8 +76,14 @@ body{
 }
 #l1, #l2
 {
-  background-color: white;
-  max-width: 200px;
+  position: relative;
+  right: 43%;
+  background-color: yellow;
   display: inline;
   text-align: left;
+}
+.date{
+  position: relative;
+  right: 36%;
+  font-size: 2vw;
 }
