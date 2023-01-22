@@ -1,0 +1,127 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* overflow-y: scroll; */
+  background-color: aquamarine;
+}
+html{
+  scroll-behavior: smooth;
+}
+.body1
+{
+  scroll-behavior: smooth;
+}
+.new
+{
+  background-color: gray;
+}
+.headertags
+{
+  position: relative;
+  top: 1vh;
+  right: 3vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border-style: solid; */
+  justify-content: right;
+  column-gap: 5vw;
+  padding: 1vw;
+}
+#header1
+{
+  font-size: 2vw;
+  width: 8vw;
+  /* margin: 10px; */
+  text-align: center;
+  padding: 1vw;
+  border-style: solid;
+}
+.header2
+{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.nameplace
+{
+  position: relative;
+  top:8vw;
+  /* border-style: solid; */
+  padding: 2vw;
+  font-size: 4vw;
+}
+#pimage
+{
+  position: relative;
+  top: 6vh;
+  width: 40vw;
+}
+#fname
+{
+  position: relative;
+  left: 2vw;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px black;
+}
+#sname
+{
+  position: relative;
+  left: 25vw;
+}
+h2{
+  font-size: 3vw;
+  position: relative;
+  bottom: 5vw;
+  margin: 7vh;
+}
+.new1
+{
+  padding: 10vw;
+  background-color: red;
+}
+.new2
+{
+  background-color: beige;
+}
+#projectheader
+{
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  padding: 3vw;
+}
+.projectsection
+{
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2vw;
+  row-gap: 2vw;
+}
+.project1, .project2, .project3, .project4, .project5,.project6
+{
+  padding: 2vw;
+  border-style:solid;
+  max-width: 25vw;
+}
+.projectdet1
+{
+  /* color: red; */
+  /* cursor: pointer; */
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.projectdetimgs
+{
+  width: 40vw;
+}
+
+/* image resize accoording to window width and height*/
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
