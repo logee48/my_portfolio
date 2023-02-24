@@ -1,0 +1,363 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+
+body{
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  background-color: aquamarine;
+}
+html{
+  scroll-behavior: smooth;
+}
+.body1
+{
+  scroll-behavior: smooth;
+}
+.new
+{
+  background-color: rgb(58, 57, 56);
+  width: 100vw;
+  height: 100vh;
+}
+#headd
+{
+  color: #657725;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  left : 2vw;
+  z-index: 2;
+}
+.headertags
+{
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border-style: solid; */
+  align-items: center;
+  justify-content: right;
+  column-gap: 5vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 4vh;
+  z-index: 10;
+}
+#header1
+{
+  color: #C79552;
+  position: relative;
+  right: 3vw;
+}
+.header2
+{
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+.header2
+{
+  position: relative;
+  top: 40vh;
+}
+#fname
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(21, 244, 238);
+}
+#dname
+{
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  top: 5vh;
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  color: #f8ffec;
+}
+.new1
+{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+#about-header
+{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 3vw;
+}
+.new2
+{
+  background-color: rgb(119, 119, 119);
+}
+#projectheader
+{
+  color: rgb(170, 170, 170);
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  position: relative;
+  top: 5vh;
+}
+.projectsection
+{
+  position: relative;
+  top: 10vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;
+  column-gap: 60px;
+}
+/* @media (max-width: 1000px) {
+  .projectsection
+  {
+    grid-template-columns: auto auto;
+  }
+} */
+@media (max-width: 1000px) {
+  .projectsection
+  {
+    grid-template-columns: auto auto;
+  }
+}
+
+#project1
+{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.5s; */
+}
+#zoom-test1
+{
+  transition-duration: 0.5s;
+}
+#zoom-test1:hover
+{
+  opacity: 0.8;
+  transform: scale(1.1)
+}
+h2{
+  color: black;
+  height: 70px;
+  font-size: 20px;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+}
+#stack_data{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#project2
+{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.5s; */
+}
+#project2:hover
+{
+  transform: scale(1.1)
+}
+#project3
+{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.5s; */
+}
+#project3:hover
+{
+  transform: scale(1.1)
+}
+#project4{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.5s; */
+}
+#project4:hover
+{
+  transform: scale(1.1)
+}
+#project5{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.5s; */
+}
+#project5:hover
+{
+  transform: scale(1.1)
+}
+#project6
+{
+  color: #12181F;
+  background-color: #C79552;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: .5s; */
+}
+#project6:hover
+{
+  transform: scale(1.1)
+}
+
+.projectdet1
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20vh;
+}
+
+@media (max-width:1000px){
+  .projectdet1
+  {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+  }
+  .projectdetimgs
+  {
+    width: auto;
+  }
+  .projectdetdes
+  {
+    width: 900px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10vw 0;
+    background-color: #C79552;
+  }
+}
+
+#img1
+{
+  background-color: red;
+  width: 300px;
+  height: 200px;
+}
+
+.projectdetdes
+{
+  width: 400px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10vw 0;
+  background-color: #C79552;
+}
+.projectdetimgs
+{
+  width: 900px;
+}
+
+/* image resize accoording to window width and height*/
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+#dummy
+{
+  padding: 8vw;
+}
+#cont
+{
+  background-color: #4e809d;
+  height: 100vh;
+}
+#cont-header
+{
+  position: relative;
+  top: 5vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+#linkedinlogo, #maillogo, #gitlogo
+{
+  width: 100px;
+  position: relative;
+  left: 20vw;
+}
+.logos
+{
+  position: relative;
+  top: 20vh;
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto auto;
+  row-gap: 15vh;
+}
+
+#footer
+{
+  background-color: grey;
+  padding: 1vw;
+  text-align: center;
+}
+
+#contact-form-out
+{
+  display: grid;
+  justify-content: right;
+}
+.contact-form
+{
+  padding: 2vw;
+  position: relative;
+  bottom: 23vh;
+  right: 20vw;
+  display: grid;
+  grid-template-rows: auto;
+  width: 300px;
+  row-gap: 10px;
+  border-style: solid;
+}
