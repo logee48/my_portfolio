@@ -8,6 +8,8 @@ import test1 from './images/t1.png'
 import test2 from './images/t2.png'
 import test3 from './images/t3.png'
 import test4 from './images/t4.png'
+import p2i1 from './images/p2ss1.png'
+import p2i2 from './images/p2ss2.png'
 import 'animate.css'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -177,13 +179,13 @@ function App() {
       <div class='projectdet1'>
           <div class='projectdetimgs'>
             <AwesomeSlider>
-              <div><img src={charimg} alt='noen'></img></div>
-              <div><img src={charimg} alt='noen'></img></div>
-              <div><img src={charimg} alt='noen'></img></div>
-              <div><img src={charimg} alt='noen'></img></div>
+              <div><img src={p2i1} alt='noen'></img></div>
+              <div><img src={p2i2} alt='noen'></img></div>
+              {/* <div><img src={charimg} alt='noen'></img></div>
+              <div><img src={charimg} alt='noen'></img></div> */}
             </AwesomeSlider>
           </div>
-          <div class='projectdetdes'>two des frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects</div>
+          <div class='projectdetdes'><h1>Hasty-com</h1><div id="p_des_sub">This project is something i'm really proud of cuz i wanted some form of way to communicate with my friends in lab, so that we can share answers with each other. I thought why not make a website so that we can share answers. The result of that is this website</div></div>
       </div></div>
       <div style={{display: three ? 'block' : 'none'}}>
       <div class='projectdet1'>
