@@ -270,13 +270,13 @@ p{
   .projectsection
   {
     grid-template-columns: auto auto;
+    margin-bottom: 100px;
   }
 }
 
 
 #img1
 {
-  background-color: red;
   width: 300px;
   height: 200px;
 }
@@ -318,20 +318,21 @@ img
   justify-content: center;
   font-size: 40px;
 }
-#linkedinlogo, #maillogo, #gitlogo
+#my-resume
 {
-  width: 100px;
   position: relative;
-  left: 20vw;
+  top: 10vh;
+  height: 100px;
+  background-color: red;
 }
 .logos
 {
+  width: 400px;
   position: relative;
   top: 20vh;
   display: grid;
-  align-items: center;
-  grid-template-rows: auto auto;
-  row-gap: 15vh;
+  grid-template-columns: auto auto auto;
+  column-gap: 100px;
 }
 
 #footer
@@ -344,17 +345,63 @@ img
 #contact-form-out
 {
   display: grid;
-  justify-content: right;
 }
 .contact-form
 {
   padding: 2vw;
   position: relative;
   bottom: 23vh;
-  right: 20vw;
   display: grid;
   grid-template-rows: auto;
   width: 300px;
   row-gap: 10px;
   border-style: solid;
+}
+
+#popup1
+{
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 600px;
+  background-color: rgb(165, 165, 165);
+  z-index: 1;
+  display: block;
+  overflow: scroll;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#popupclose
+{
+  text-align: right;
+  padding: 10px;
+}
+.popupslider
+{
+  width: 600px;
+}
+#popupslider_test
+{
+  display: grid;
+  justify-content: center;
+}
+.popupheader
+{
+  font-size: 50px;
+  text-align: center;
+}
+#popupsubheader
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+#popupdes
+{
+  background-color: #C79552;
+  border-radius: 30px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
