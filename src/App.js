@@ -1,12 +1,11 @@
 import './App.css';
 import charimg from './char.png';
 import img1 from './wall1.jpg';
-import git from './images/github.png'
-import linkedin from './images/linkedin.png'
-import maill from './images/mail.png'
+import hexalogo from './images/hexa.png';
+import reddit from './images/reddit.png';
+import hasty from './images/hasty.png';
+import nine11 from './images/911.png';
 import test1 from './images/t1.png'
-import test2 from './images/t2.png'
-import test3 from './images/t3.png'
 import test4 from './images/t4.png'
 import p2i1 from './images/p2ss1.png'
 import p2i2 from './images/p2ss2.png'
@@ -18,10 +17,43 @@ import { useState, useEffect } from 'react';
 // import ScrollAnimation from 'react-animate-on-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   useEffect(()=>{
-    AOS.init({duration: 2000 })
+    AOS.init({duration: 2000 });
+    var nodes  = document.querySelectorAll('li'),
+_nodes = [].slice.call(nodes, 0);
+var getDirection = function (ev, obj) {
+var w = obj.offsetWidth,
+    h = obj.offsetHeight,
+    x = (ev.pageX - obj.offsetLeft - (w / 2) * (w > h ? (h / w) : 1)),
+    y = (ev.pageY - obj.offsetTop - (h / 2) * (h > w ? (w / h) : 1)),
+    d = Math.round( Math.atan2(y, x) / 1.57079633 + 5 ) % 4;
+return d;
+};
+var addClass = function ( ev, obj, state ) {
+var direction = getDirection( ev, obj ),
+    class_suffix = "";
+    obj.className = "";
+switch ( direction ) {
+    case 0 : class_suffix = '-top';    break;
+    case 1 : class_suffix = '-right';  break;
+    case 2 : class_suffix = '-bottom'; break;
+    case 3 : class_suffix = '-left';   break;
+}
+obj.classList.add( state + class_suffix );
+};
+// bind events
+_nodes.forEach(function (el) {
+el.addEventListener('mouseover', function (ev) {
+    addClass( ev, this, 'in' );
+}, false);
+el.addEventListener('mouseout', function (ev) {
+    addClass( ev, this, 'out' ); 
+}, false);
+});
   },[])
   // const [test, settest] = useState(false)
   const [name, setname] = useState("")
@@ -106,6 +138,32 @@ function App() {
       setone(false);
     }
   }
+
+
+
+
+
+// - Noel Delgado | @pixelia_me
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div>
       <div>
@@ -139,11 +197,69 @@ function App() {
 
       {/*  box project */}
       <div class='projectsection'>
-        <div id="zoom-test1">
-        <a href="#projectheader" id='project1' className='animation' data-aos='fade-up' onClick={fun1}>
-          <div class='project-img1'><img id='img1' src={img1}></img></div>
-          <h2>My portfolio<p>Reactjs</p></h2>
-        </a></div>
+        <div>
+  <ul>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={test1}></img> 
+      <div class='info'>
+      <h1>Portfolio<br></br><p>React js</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun2}><li>
+    <img src={hasty}></img> 
+      <div class='info'>
+       <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+        <img src={test4}></img>
+      <div class='info'>
+      <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+      
+      <div class='info'>
+      <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={nine11}></img>
+      <div class='info'>
+      <h1>9 11<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+      <img src={hexalogo}></img>
+      <div class='info'>
+      <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={reddit}></img>
+      <div class='info'>
+      <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li> 
+      <div class='info'>
+      <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1} style={{textDecoration:"none"}}><li> 
+      <div class='info'>
+      <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+      <div class='info'>
+      <h1>Game Without Name<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    
+  </ul>
+</div>
+        
 
         {/* popup-one */}
         <div id='popup1' style={{display: one ? 'block' : 'none'}}>
@@ -167,16 +283,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -189,11 +303,7 @@ function App() {
 
 
 
-        <div id="zoom-test1">
-        <a href='#projectheader' id='project2' className='animation' data-aos='fade-up'onClick={fun2}>
-        <div class='project-img1'><img id='img1' src={img1}></img></div>
-        <h2>HaStY-CoM<p>HTML | CSS | Javascript</p></h2>
-        </a></div>
+        
 
 
         {/* popup two */}
@@ -216,16 +326,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -238,11 +346,7 @@ function App() {
 
 
 
-        <div id="zoom-test1">
-        <a href='#projectheader' id='project3' className='animation' data-aos='fade-up' onClick={fun3}>
-          <div class='project-img1'><img id='img1' src={test2}></img></div>
-          <h2>Reddit meme generator<p>HTML | CSS | Javascript</p></h2>
-        </a></div>
+        
 
         {/* popup three */}
         <div id='popup1' style={{display: three ? 'block' : 'none'}}>
@@ -264,16 +368,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -287,11 +389,7 @@ function App() {
 
 
 
-        <div id="zoom-test1">
-        <a href='#projectheader' id='project4' className='animation' data-aos='fade-up' onClick={fun4}>
-        <div class='project-img1'><img id='img1' src={test3}></img></div>
-        <h2>Image format converter<p>Python | PIL module</p></h2>
-        </a></div>
+        
 
 
         {/* popup four */}
@@ -314,16 +412,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -337,11 +433,7 @@ function App() {
 
 
 
-        <div id="zoom-test1">
-        <a href='#projectheader' id='project5' className='animation' data-aos='fade-up' onClick={fun5}>
-          <div class='project-img1'><img id='img1' src={img1}></img></div>
-          <h2>Hexaplay<p>unity game engine | C#</p></h2>
-        </a></div>
+        
 
         {/* popup five */}
         <div id='popup1' style={{display: five ? 'block' : 'none'}}>
@@ -363,16 +455,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -388,11 +478,7 @@ function App() {
 
 
 
-        <div id="zoom-test1">
-          <a href='#projectheader' id='project6' className='animation' data-aos='fade-up'onClick={fun6}>
-          <div class='project-img1'><img id='img1' src={test1}></img></div>
-          <h2>system stat monitor<p>python | Reactjs</p></h2>
-          </a></div>
+        
 
 
           {/* popup six */}
@@ -415,16 +501,14 @@ function App() {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                  <ul>
-                    <li>Everyone should have a portfolio to showcase what they have accomplished.</li>
-                    <li>And showoff their projects and experience.</li>
-                  </ul>
+                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
+                    # And showoff their projects and experience.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  <li>during building this project i was still learning react js, so mostly Reactjs</li>
+                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
-                    <dt><li>learnt concepts like:</li></dt>
+                    <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
@@ -434,22 +518,6 @@ function App() {
           </div>
       </div>
         </div>
-
-
-
-
-
-
-          <div id="zoom-test1">
-          <a href='#projectheader' id='project6' className='animation' data-aos='fade-up'onClick={fun6}>
-          <div class='project-img1'><img id='img1' src={test4}></img></div>
-          <h2>mr.predictor<p>Python | pygame module</p></h2>
-          </a></div>
-          <div id="zoom-test1">
-          <a href='#projectheader' id='project6' className='animation' data-aos='fade-up'onClick={fun6}>
-          <div class='project-img1'><img id='img1' src={img1}></img></div>
-          <h2>the-game-without-name<p>Python | pygame module</p></h2>
-          </a></div>
       </div>
 
       {/* project display place with images  */}
@@ -466,27 +534,76 @@ function App() {
 
     {/*     page four    */}
     <div id='cont'>
-      <div id='cont-header' className='animation' data-aos='fade-up'>Contact</div>
-      
-      <div>
-        <div id="my-resume">samplee</div>
-        <div class='logos'>
-          <a id='gitlogo' className='animation' data-aos='fade-right' target='_blank' rel='noreferrer' href='https://github.com/logee48'><img src={git} alt='none'></img></a>
-          <a id='linkedinlogo' className='animation' data-aos='fade-right' target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/logeshwaran-elumalai-a180b3249/'><img src={linkedin} alt='none'></img></a>
-          <a id='maillogo' className='animation' data-aos='fade-right' href='mailto:logeshe9159@gmail.com'><img src={maill} alt='none'></img></a>
+    <section id="contact">
+  
+  <h1 class="section-header" style={{paddingTop:"80px"}}>Contact</h1>
+  
+  <div class="contact-wrapper">
+  
+  {/* <!-- Left contact page -->  */}
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} type="text" class="form-control" id="name" placeholder="NAME" name="name" value={name} onChange={(e)=>{setname(e.target.value)}} required></input>
         </div>
       </div>
-      {/* <div id='contact-form-out'> */}
-        {/* <input placeholder='your name' type='text'></input>
-        <input placeholder='your email id'></input>
-        <input placeholder='your message...'></input> */}
-      <div>
-        <form class='contact-form'>
-            <input type="text" value={name} placeholder='your name' onChange={(e) => setname(e.target.value)}/>
-            <input type="email" value={email} placeholder='your email id' onChange={(e) => setemail(e.target.value)}/>
-            <input type="text" value={message} placeholder='your message...̀' onChange={(e) => setmessage(e.target.value)}/>
-            <input type="submit" value='submit'/>
-        </form>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value={email} onChange={(e)=>{setemail(e.target.value)}} required></input>
+        </div>
+      </div>
+
+      <textarea style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} class="form-control" rows="8" placeholder="MESSAGE" name="message" required value={message} onChange={(e)=>{setmessage(e.target.value)}}></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  {/* <!-- Left contact page -->  */}
+    
+      <div class="direct-contact-container">
+
+        <div class="contact-list">
+          <div class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chennai, Tamil Nadu</span></i></div>
+          
+          <div class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(91) 8056779031</a></span></i></div>
+          
+          <div class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">logeshe9159@gmail.com</a></span></i></div>
+          
+        </div>
+
+        
+        <ul class="social-media-list">
+          <a href="https://www.github.com/logee48" target="_blank" class="contact-icon"><li>
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </li></a>
+          <a href="https://www.linkedin.com/in/logeshwaran-elumalai-a180b3249/" target="_blank" class="contact-icon">
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i>
+          </li></a>
+          <a href="https://twitter.com/logeshwaranE1" target="_blank" class="contact-icon">
+          <li><i class="fa fa-twitter" aria-hidden="true"></i>
+          </li></a>
+        </ul>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+  
+  
+  
+  
       </div>
     </div>
     <div id='footer'>
@@ -494,7 +611,19 @@ function App() {
     </div>
 
 
-    </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+    
     </div>
   );
 }
