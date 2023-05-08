@@ -1,6 +1,7 @@
 import './App.css';
 import charimg from './char.png';
 import img1 from './wall1.jpg';
+import cex from './images/cex.png';
 import hexalogo from './images/hexa.png';
 import reddit from './images/reddit.png';
 import hasty from './images/hasty.png';
@@ -212,7 +213,7 @@ el.addEventListener('mouseout', function (ev) {
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun1}><li>
-        <img src={test4}></img>
+        <img src={cex}></img>
       <div class='info'>
       <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
       </div>
