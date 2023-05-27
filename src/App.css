@@ -353,7 +353,8 @@ img
 #footer
 {
   background-color: grey;
-  padding: 1vw;
+  padding: .5vw;
+  /* margin: .2vw; */
   text-align: center;
 }
 

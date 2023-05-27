@@ -188,6 +188,13 @@ el.addEventListener('mouseout', function (ev) {
     {/*     page two    */}   
     <div class='new1' id='abou'>
       <div id='about-header' className='animation' data-aos='zoom-in'>About me</div>
+      <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
+      <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
+      <div>I'm mostly interested in game development and  I do web development and app development</div>
+      <div>i have made few personal, school and college projects, check them in project section</div>
+      <div>here<br></br>download my resume</div>
+      <div>**photo on the right or left depends on where the text is**</div>
+      <div></div>
     </div>
 
 
@@ -212,19 +219,19 @@ el.addEventListener('mouseout', function (ev) {
        <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun3}><li>
         <img src={cex}></img>
       <div class='info'>
       <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun4}><li>
       
       <div class='info'>
       <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun5}><li>
     <img src={nine11}></img>
       <div class='info'>
       <h1>9 11<br></br><p>Unity | C#</p></h1>
@@ -311,10 +318,10 @@ el.addEventListener('mouseout', function (ev) {
         <div id='popup1' style={{display: two ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun2}>close</button></div>
         <div>
-          <div class='popupheader'>My portfolio</div>
+          <div class='popupheader'>Hasty-Com</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/hasty-com" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://logee48.github.io/hasty-com/" target='_blank'>live link</a></div>
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -327,18 +334,20 @@ el.addEventListener('mouseout', function (ev) {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
-                    # And showoff their projects and experience.</div>
+                    <div># I needed a way to communicate with my friends in computer lab classes without needing to provide<br></br>email or phone number<br></br>
+                    # So i made one.</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  ~ during building this project i was still learning react js, so mostly Reactjs
-                  <dl>
+                  ~ During building this project i leant about how data are stored in firebase and how to get those data.<br></br>
+                  ~ How pass values from one page to another using get()
+                  ~ And some Javascript
+                  {/* <dl>
                     <dt># learnt concepts like:</dt>
                     <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
                     <dd>- adding third party packages for features like sliders</dd>
-                  </dl>
+                  </dl> */}
                 </div>
               </div>
           </div>
@@ -353,7 +362,7 @@ el.addEventListener('mouseout', function (ev) {
         <div id='popup1' style={{display: three ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun3}>close</button></div>
         <div>
-          <div class='popupheader'>My portfolio</div>
+          <div class='popupheader'>CEX 2.0</div>
           <div id="popupsubheader">
             <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
             <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
@@ -369,8 +378,8 @@ el.addEventListener('mouseout', function (ev) {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
-                    # And showoff their projects and experience.</div>
+                    <div># I made this project for my software engineering concepts in my 4th semester<br></br>
+                    # CEX - Complete Entertainment eXchange is website where user can buy and sell their used game and electronics</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
@@ -383,7 +392,7 @@ el.addEventListener('mouseout', function (ev) {
                   </dl>
                 </div>
               </div>
-          </div>
+          </div>ß
       </div>
         </div>
 
@@ -543,7 +552,7 @@ el.addEventListener('mouseout', function (ev) {
   
   {/* <!-- Left contact page -->  */}
     
-    <form id="contact-form" class="form-horizontal" role="form">
+    <form id="contact-form" class="form-horizontal">
        
       <div class="form-group">
         <div class="col-sm-12">
@@ -573,9 +582,9 @@ el.addEventListener('mouseout', function (ev) {
       <div class="direct-contact-container">
 
         <div class="contact-list">
-          <div class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chennai, Tamil Nadu</span></i></div>
+          <div class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chennai, India</span></i></div>
           
-          <div class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(91) 8056779031</a></span></i></div>
+          <div class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">(+91) 8056779031</span></i></div>
           
           <div class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">logeshe9159@gmail.com</a></span></i></div>
           
