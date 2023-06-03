@@ -5,11 +5,20 @@ import cex from './images/cex.png';
 import hexalogo from './images/hexa.png';
 import reddit from './images/reddit.png';
 import hasty from './images/hasty.png';
+import imgcon from './images/imgcon.png';
+import gwn from './images/gwn.png';
+import drp from './images/dr.p.png';
+import istat from './images/istat.png';
+import portfolio from './images/portfolio.png';
+import resume from './resume.pdf';
+import pp from './images/profilepic.png';
 import nine11 from './images/911.png';
 import test1 from './images/t1.png'
 import test4 from './images/t4.png'
 import p2i1 from './images/p2ss1.png'
 import p2i2 from './images/p2ss2.png'
+import nine1 from './images/nine1.png'
+import nine2 from './images/nine2.png'
 import 'animate.css'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -68,6 +77,8 @@ el.addEventListener('mouseout', function (ev) {
   const [six, setsix] = useState(false)
   const [seven, setseven] = useState(false)
   const [eight, seteight] = useState(false)
+  const [nine, setnine] = useState(false)
+  const [ten, setten] = useState(false)
   const [popupdisplay1, setpopdisplay1] = useState(false)
   // console.log(testsamp, aa);
   // const testfun=()=>{
@@ -82,6 +93,10 @@ el.addEventListener('mouseout', function (ev) {
       setfour(false);
       setfive(false);
       setsix(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
     }
   }
   const fun2 = ()=>{
@@ -93,6 +108,10 @@ el.addEventListener('mouseout', function (ev) {
       setfour(false);
       setfive(false);
       setsix(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
     }
   }
   const fun3 = ()=>{
@@ -104,6 +123,10 @@ el.addEventListener('mouseout', function (ev) {
       setfour(false);
       setfive(false);
       setsix(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
     }
   }
   const fun4 = ()=>{
@@ -115,6 +138,10 @@ el.addEventListener('mouseout', function (ev) {
       setone(false);
       setfive(false);
       setsix(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
     }
   }
   const fun5 = ()=>{
@@ -126,6 +153,10 @@ el.addEventListener('mouseout', function (ev) {
       setfour(false);
       setone(false);
       setsix(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
     }
   }
   const fun6 = ()=>{
@@ -137,6 +168,70 @@ el.addEventListener('mouseout', function (ev) {
       setfour(false);
       setfive(false);
       setone(false);
+      setseven(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
+    }
+  }
+  const fun7 = ()=>{
+    setseven(!seven);
+    if(seven == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setten(false);
+    }
+  }
+  const fun8 = ()=>{
+    seteight(!eight);
+    if(eight == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      setseven(false);
+      setnine(false);
+      setten(false);
+    }
+  }
+  const fun9 = ()=>{
+    setnine(!nine);
+    if(nine == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setseven(false);
+      setten(false);
+    }
+  }
+  const fun10 = ()=>{
+    setten(!ten);
+    if(ten == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setseven(false);
     }
   }
 
@@ -188,13 +283,22 @@ el.addEventListener('mouseout', function (ev) {
     {/*     page two    */}   
     <div class='new1' id='abou'>
       <div id='about-header' className='animation' data-aos='zoom-in'>About me</div>
-      <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
-      <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
-      <div>I'm mostly interested in game development and  I do web development and app development</div>
-      <div>i have made few personal, school and college projects, check them in project section</div>
-      <div>here<br></br>download my resume</div>
-      <div>**photo on the right or left depends on where the text is**</div>
-      <div></div>
+      <div style={{display:'flex',columnCount:2, alignItems:"center", justifyItems:"center", marginTop:"10vh"}}>
+        <div style={{padding:"50px"}}>
+          <img src={pp} style={{borderRadius:"50%", width:"300px"}}></img>
+        </div>
+        <div style={{padding:"100px"}}>
+          <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
+          <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
+          <div>I'm mostly interested in game development and  I also do web development and app development</div>
+          <div>i have made few personal, school and college projects, check them in <a href="#pro">Project section</a></div>
+          {/* <div>here<br></br>download my resume</div>
+          <div>**photo on the right or left depends on where the text is**</div> */}
+          <div><a href={resume} download>download my resume</a></div>
+          {/* <a href={resume} download>Click to download</a> */}
+
+        </div>
+      </div>
     </div>
 
 
@@ -208,7 +312,7 @@ el.addEventListener('mouseout', function (ev) {
         <div>
   <ul>
     <a href="#projectheader" onClick={fun1}><li>
-    <img src={test1}></img> 
+    <img src={portfolio}></img> 
       <div class='info'>
       <h1>Portfolio<br></br><p>React js</p></h1>
       </div>
@@ -226,7 +330,7 @@ el.addEventListener('mouseout', function (ev) {
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun4}><li>
-      
+    <img src={istat}></img>
       <div class='info'>
       <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
       </div>
@@ -237,29 +341,32 @@ el.addEventListener('mouseout', function (ev) {
       <h1>9 11<br></br><p>Unity | C#</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun6}><li>
       <img src={hexalogo}></img>
       <div class='info'>
       <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun7}><li>
     <img src={reddit}></img>
       <div class='info'>
       <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li> 
+    <a href="#projectheader" onClick={fun8}><li> 
+      <img src={imgcon}></img>
       <div class='info'>
       <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1} style={{textDecoration:"none"}}><li> 
+    <a href="#projectheader" onClick={fun9} style={{textDecoration:"none"}}><li> 
+      <img src={drp}></img>
       <div class='info'>
       <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
       </div>
     </li></a>
-    <a href="#projectheader" onClick={fun1}><li>
+    <a href="#projectheader" onClick={fun10}><li>
+      <img src={gwn}></img>
       <div class='info'>
       <h1>Game Without Name<br></br><p>Python | pygame</p></h1>
       </div>
@@ -383,16 +490,15 @@ el.addEventListener('mouseout', function (ev) {
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  ~ during building this project i was still learning react js, so mostly Reactjs
                   <dl>
                     <dt># learnt concepts like:</dt>
-                    <dd>- hooks</dd>
-                    <dd>- basic conditional rendering</dd>
-                    <dd>- adding third party packages for features like sliders</dd>
+                    <dd>- React Routes</dd>
+                    <dd>- Firebase authentication ( mainly google auth )</dd>
+                    {/* <dd>- adding third party packages for features like sliders</dd> */}
                   </dl>
                 </div>
               </div>
-          </div>ß
+          </div>
       </div>
         </div>
 
@@ -406,7 +512,7 @@ el.addEventListener('mouseout', function (ev) {
         <div id='popup1' style={{display: four ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun4}>close</button></div>
         <div>
-          <div class='popupheader'>My portfolio</div>
+          <div class='popupheader'>iStat</div>
           <div id="popupsubheader">
             <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
             <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
@@ -449,33 +555,33 @@ el.addEventListener('mouseout', function (ev) {
         <div id='popup1' style={{display: five ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun5}>close</button></div>
         <div>
-          <div class='popupheader'>My portfolio</div>
+          <div class='popupheader'>9 11</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/9-11" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={nine1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={nine2} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
-                    # And showoff their projects and experience.</div>
+                    <div># Because it is a game and i loving making games.<br></br>
+                    # i saw a image in reddit similar to this game and why not make it into a game</div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  ~ during building this project i was still learning react js, so mostly Reactjs
+                ~ Nothing new just basic unity concepts.
                   <dl>
-                    <dt># learnt concepts like:</dt>
-                    <dd>- hooks</dd>
+                    {/* <dt>~ Just basic unity concepts</dt> */}
+                    {/* <dd>- hooks</dd>
                     <dd>- basic conditional rendering</dd>
-                    <dd>- adding third party packages for features like sliders</dd>
+                    <dd>- adding third party packages for features like sliders</dd> */}
                   </dl>
                 </div>
               </div>
@@ -495,7 +601,46 @@ el.addEventListener('mouseout', function (ev) {
         <div id='popup1' style={{display: six ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun6}>close</button></div>
         <div>
-          <div class='popupheader'>My portfolio</div>
+          <div class='popupheader'>Hexaplay</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/hexaplay" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># One day suddendly i got this game idea, coded the logic for this concept in 1 hour<br></br>
+                    # Also made this game in <a href="https://github.com/logee48/cooler-pick/src" target='_blank'>web version</a> (mobile friendly)</div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  <dl>
+                    <dt># learnt concepts like:</dt>
+                    <dd>- scene management</dd>
+                    <dd>- how to change color of gameObject onclick of button</dd>
+                    <dd>- gameObject color rendering in unity</dd>
+                    <dd>- adding timer to scene</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+        {/* popup 7 */}
+        <div id='popup1' style={{display: seven ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun7}>close</button></div>
+        <div>
+          <div class='popupheader'>reddit meme generator</div>
           <div id="popupsubheader">
             <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
             <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
@@ -511,23 +656,148 @@ el.addEventListener('mouseout', function (ev) {
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># Everyone should have a portfolio to showcase what they have accomplished.<br></br>
-                    # And showoff their projects and experience.</div>
+                    <div># To see meme's on my school computer<br></br>
+                    </div>
                 </div>
                 <div id="pop">
                 <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
-                  ~ during building this project i was still learning react js, so mostly Reactjs
+                  ~ how to display api data into web page<br></br>
+                  ~ how to request for new data
                   <dl>
                     <dt># learnt concepts like:</dt>
-                    <dd>- hooks</dd>
-                    <dd>- basic conditional rendering</dd>
-                    <dd>- adding third party packages for features like sliders</dd>
+                    <dd>- fetch api function</dd>
+                    {/* <dd>- basic conditional rendering</dd>
+                    <dd>- adding third party packages for features like sliders</dd> */}
                   </dl>
                 </div>
               </div>
           </div>
       </div>
         </div>
+
+
+        {/* popup 8 */}
+        <div id='popup1' style={{display: eight ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun8}>close</button></div>
+        <div>
+          <div class='popupheader'>img format converter</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div>- After finishing college I needed to apply for college. All college were online so I needed to upload my photo in my application where it only accepted specific format and size, so i though why not make my own software</div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  ~ I made this software using python and PILLOW librarie<br></br>
+                  ~ For UI used TKinter.
+                  {/* <dl>
+                    <dt># learnt concepts like:</dt>
+                    <dd>- hooks</dd>
+                    <dd>- basic conditional rendering</dd>
+                    <dd>- adding third party packages for features like sliders</dd>
+                  </dl> */}
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+
+        {/* popup 9 */}
+        <div id='popup1' style={{display: nine ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun9}>close</button></div>
+        <div>
+          <div class='popupheader'>dr.Predictor</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This is just a simple Predicting game.<br></br>
+                    # Made this one for my friends project</div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Just some basic Python <a href='https://python.org' target='_blank'>pygame</a> concept</dd>
+                    <dd>- Screen touch buttons</dd>
+                    <dd>- Key trigger functions</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+
+        {/* popup 10 */}
+        <div id='popup1' style={{display: ten ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun10}>close</button></div>
+        <div>
+          <div class='popupheader'>game without a name</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This game has a special place in my heart<br></br>
+                    # This was my very first software/game that i made<br></br>
+                    # Made this one for my class 12th computer science project
+                    </div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Mostly followed a youtube video</dd>
+                    <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+
       </div>
 
       {/* project display place with images  */}
