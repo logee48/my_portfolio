@@ -368,7 +368,7 @@ el.addEventListener('mouseout', function (ev) {
     <a href="#projectheader" onClick={fun10}><li>
       <img src={gwn}></img>
       <div class='info'>
-      <h1>Game Without Name<br></br><p>Python | pygame</p></h1>
+      <h1>The Game Without A Name<br></br><p>Python | pygame</p></h1>
       </div>
     </li></a>
     
@@ -382,7 +382,7 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>My portfolio</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/my_portfolio" target='_blank'>github link</a></div>
             <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
           </div>
           <div id="popupdiv">
@@ -471,8 +471,8 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>CEX 2.0</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/Cex-budget--v" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://genuine-platypus-5848e0.netlify.app/" target='_blank'>live link</a></div>
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -513,9 +513,10 @@ el.addEventListener('mouseout', function (ev) {
           <div id="popupclose"><button onClick={fun4}>close</button></div>
         <div>
           <div class='popupheader'>iStat</div>
+          <div style={{display:"flex",justifyContent:"center"}}>**still working on this project**</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/stat_data" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -642,8 +643,8 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>reddit meme generator</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/reddit_meme_generator" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://logee48.github.io/reddit_meme_generator/" target='_blank'>live link</a></div>
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -682,8 +683,8 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>img format converter</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/file-project" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -722,8 +723,8 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>dr.Predictor</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/mr.predictor" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
@@ -762,8 +763,8 @@ el.addEventListener('mouseout', function (ev) {
         <div>
           <div class='popupheader'>game without a name</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48" target='_blank'>github link</a></div>
-            <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
