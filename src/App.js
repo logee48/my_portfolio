@@ -15,6 +15,10 @@ import pp from './images/profilepic.png';
 import nine11 from './images/911.png';
 import test1 from './images/t1.png'
 import test4 from './images/t4.png'
+import p1i1 from './images/p1ss1.png'
+import p1i2 from './images/p1ss2.png'
+import p1i3 from './images/p1ss3.png'
+import p1i4 from './images/p1ss4.png'
 import p2i1 from './images/p2ss1.png'
 import p2i2 from './images/p2ss2.png'
 import p3i1 from './images/p3ss1.png'
@@ -47,8 +51,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { db } from './config';
+import { set, ref} from 'firebase/database';
 
 function App() {
+
+  
   useEffect(()=>{
     AOS.init({duration: 2000 });
     var nodes  = document.querySelectorAll('li'),
@@ -98,6 +106,21 @@ el.addEventListener('mouseout', function (ev) {
   const [nine, setnine] = useState(false)
   const [ten, setten] = useState(false)
   const [popupdisplay1, setpopdisplay1] = useState(false)
+  const db_fun=()=>{
+    console.log("worksssss");
+    const timestamp = Date.now();
+    const datee = new Date();
+    if(name!="" && email!="" && message!=""){
+    set(ref(db, "portfolio_contact/"+timestamp),{
+      name:name,
+      email:email,
+      message:message,
+      time_and_date:datee.getDate()+"-"+datee.getMonth()+"-"+datee.getFullYear()+"/"+datee.getHours()+":"+datee.getMinutes()
+    })}
+    setemail("");
+    setname("");
+    setmessage("");
+  }
   // console.log(testsamp, aa);
   // const testfun=()=>{
   //   settest(!test)
@@ -407,10 +430,10 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div><img src={charimg} alt='noen'></img></div>
-                    <div><img src={charimg} alt='noen'></img></div>
-                    <div><img src={charimg} alt='noen'></img></div>
-                    <div><img src={charimg} alt='noen'></img></div>
+                    <div><img src={p1i1} alt='noen'></img></div>
+                    <div><img src={p1i2} alt='noen'></img></div>
+                    <div><img src={p1i3} alt='noen'></img></div>
+                    <div><img src={p1i4} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -850,7 +873,7 @@ el.addEventListener('mouseout', function (ev) {
   
   {/* <!-- Left contact page -->  */}
     
-    <form id="contact-form" class="form-horizontal">
+    <form class="form-horizontal">
        
       <div class="form-group">
         <div class="col-sm-12">
@@ -866,8 +889,8 @@ el.addEventListener('mouseout', function (ev) {
 
       <textarea style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} class="form-control" rows="8" placeholder="MESSAGE" name="message" required value={message} onChange={(e)=>{setmessage(e.target.value)}}></textarea>
       
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
+      <button class="btn btn-primary send-button" onClick={db_fun}>
+        <div class="alt-send-button" >
           <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
         </div>
       
