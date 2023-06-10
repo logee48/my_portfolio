@@ -17,6 +17,24 @@ import test1 from './images/t1.png'
 import test4 from './images/t4.png'
 import p2i1 from './images/p2ss1.png'
 import p2i2 from './images/p2ss2.png'
+import p3i1 from './images/p3ss1.png'
+import p3i2 from './images/p3ss2.png'
+import p3i3 from './images/p3ss3.png'
+import p3i4 from './images/p3ss4.png'
+import p3i5 from './images/p3ss5.png'
+import p6i1 from './images/p6ss1.png'
+import p6i2 from './images/p6ss2.png'
+import p6i3 from './images/p6ss3.png'
+import p6i4 from './images/p6ss4.png'
+import p8i1 from './images/p8ss1.png'
+import p8i2 from './images/p8ss2.png'
+import p8i3 from './images/p8ss3.png'
+import p9i1 from './images/p9ss1.png'
+import p9i2 from './images/p9ss2.png'
+import p9i3 from './images/p9ss3.png'
+import p10i1 from './images/p10ss1.png'
+import p10i2 from './images/p10ss2.png'
+import p10i3 from './images/p10ss3.png'
 import nine1 from './images/nine1.png'
 import nine2 from './images/nine2.png'
 import 'animate.css'
@@ -478,14 +496,18 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p3i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p3i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p3i3} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p3i4} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p3i5} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># I made this project for my software engineering concepts in my 4th semester<br></br>
+                    <div># It is more like a ecommerse website, u have features like cart<br></br>
+                      # I made this project for my software engineering concepts in my 4th semester<br></br>
                     # CEX - Complete Entertainment eXchange is website where user can buy and sell their used game and electronics</div>
                 </div>
                 <div id="pop">
@@ -611,8 +633,10 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p6i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p6i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p6i3} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p6i4} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -690,8 +714,9 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p8i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p8i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p8i3} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -730,8 +755,9 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p9i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p9i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p9i3} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -770,8 +796,9 @@ el.addEventListener('mouseout', function (ev) {
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p2i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p2i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
