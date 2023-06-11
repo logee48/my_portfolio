@@ -30,6 +30,7 @@ html{
 }
 #headd
 {
+  font-size: 20px;
   color: #657725;
   position: absolute;
   display: grid;
@@ -39,16 +40,17 @@ html{
 }
 .headertags
 {
+  font-size: 20px;
   position: fixed;
   display: grid;
   grid-template-columns: auto auto auto;
   /* border-style: solid; */
   align-items: center;
   justify-content: right;
-  column-gap: 5vw;
+  column-gap: 80px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100vw;
-  height: 4vh;
+  height: 40px;
   z-index: 10;
 }
 #header1
@@ -71,7 +73,7 @@ html{
 #fname
 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Roboto Mono', monospace;
   color: rgb(21, 244, 238);
 }
@@ -80,7 +82,7 @@ html{
   font-family: 'Source Code Pro', monospace;
   position: relative;
   top: 5vh;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -323,6 +325,7 @@ img
 {
   background-color: black;
   height: 100vh;
+  /* padding: 100px; */
 }
 #cont-header
 {
@@ -949,8 +952,21 @@ hr {
   border-color: rgba(255,255,255,.6);
 }
 
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
+.dropicon{
+  display: none;
+  position: relative;
+  right: -10vw;
+}
+#image-flex{
+  display: flex;
+  column-count: 2;
+  align-items: center;
+  justify-items: center;
+  margin-top: 80px;
+  background-color: "white";
+  font-size: 25px;
+}
+@media screen and (max-width: 1000px) {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -975,8 +991,20 @@ hr {
   }
 }
 
-@media screen and (max-width: 569px) {
-
+@media screen and (max-width: 1000px) {
+  .section-header{
+    font-size: 100px;
+  }
+  .form-horizontal{
+    transform: scale(1.5);
+    margin: 100px;
+    position: relative;
+    left: 100px;
+  }
+  .form-group
+  {
+    /* margin-left: ; */
+  }
   .direct-contact-container, .form-wrapper {
     float: none;
     margin: 0 auto;
@@ -1012,8 +1040,41 @@ hr {
   
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 1000px) {
   .send-button {
     width: 99%;
+  }
+  .direct-contact-container{
+    transform: scale(1.5);
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .dropicon{
+    display: block;
+    transform: scale(3);
+  }
+  #header1
+  {
+    display: none;
+  }
+  #headd{
+    font-size: 50px;
+  }
+  .headertags{
+    height: 80px;
+  }
+  #about-header{
+    font-size: 100px;
+  }
+  #image-flex
+  {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 40px;
+  }
+  #footer
+  {
+    font-size: 25px;
   }
 }

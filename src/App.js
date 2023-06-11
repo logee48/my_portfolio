@@ -90,6 +90,12 @@ el.addEventListener('mouseout', function (ev) {
     addClass( ev, this, 'out' ); 
 }, false);
 });
+const aboutheight = ()=>{
+  if(document.getElementById("disp").offsetHeight>window.screen.availHeight){
+    setabouth(document.getElementById("disp").offsetHeight)
+  }
+}
+aboutheight()
   },[])
   // const [test, settest] = useState(false)
   const [name, setname] = useState("")
@@ -294,41 +300,64 @@ el.addEventListener('mouseout', function (ev) {
 
 
 
+const aa = window.screen.availWidth;
+const bb = window.screen.availHeight;
+const [abouth,setabouth] = useState(bb);
 
-
-
-
-
-
-
+// console.log(document.getElementById("disp").offsetHeight);
+// console.log(bb);
+console.log(abouth);
   return (
     <div>
+      {/* <div>{aa}</div>
+      <div>{bb}</div> */}
       <div>
 
-    {/*     page one    */}    
+    {/*     page one    */}
     <div class='new' id='page'>
     <div class="headertags">
-      <a id='headd' href='#page'>logesh</a>
+      <a id='headd' href='#page' onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>logesh</a>
       <a id="header1" href='#abou'>About</a>
       <a id="header1" href="#pro">Project</a>
       <a id="header1" href='#cont'>Contact</a>
+      <div class="dropicon"><i class="fa fa-bars" aria-hidden="true" onClick={()=>{
+    if(document.getElementById("dropmenushit").style.display=="none"){
+    document.getElementById("dropmenushit").style.display="block"}
+    else{ document.getElementById("dropmenushit").style.display="none"}
+    }}></i></div>
     </div>
+  <div id="dropmenushit" style={{position:"fixed",display:"none",width:"100vw",backgroundColor:"white",fontSize:"50px",paddingTop:"100px", textAlign:"center",zIndex:"9"}}>
+      <a id="" href='#abou' style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>About</div></a>
+      <a id="" href="#pro" style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>Project</div></a>
+      <a id="" href='#cont' style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>Contact</div></a>
+  </div>
+
+
+      {/* <div style={{display:"none"}}><i class="fa fa-bars" aria-hidden="true"></i></div> */}
+    
     <div class='header2'>
           <h1 id='fname' className='animation' data-aos='fade-in'>Hi i'm Logeshwaran Elumalai</h1>
           <h1 id='dname' className='animation' data-aos='fade-up'>Just a normal computer science student who likes to code for fun.</h1>
     </div>
     </div>
+    
+  
+
+
+
+
+
 
 
 
     {/*     page two    */}   
-    <div class='new1' id='abou'>
+    <div class='new1' id='abou' style={{height:{abouth}}}>
       <div id='about-header' className='animation' data-aos='zoom-in'>About me</div>
-      <div style={{display:'flex',columnCount:2, alignItems:"center", justifyItems:"center", marginTop:"10vh"}}>
+      <div id="image-flex">
         <div style={{padding:"50px"}}>
           <img src={pp} style={{borderRadius:"50%", width:"300px"}}></img>
         </div>
-        <div style={{padding:"100px"}}>
+        <div style={{padding:"100px"}} id="disp">
           <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
           <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
           <div>I'm mostly interested in game development and  I also do web development and app development</div>
@@ -339,6 +368,7 @@ el.addEventListener('mouseout', function (ev) {
           {/* <a href={resume} download>Click to download</a> */}
 
         </div>
+        {/* <div style={{zIndex:"100"}}>{document.getElementById("disp").offsetHeight}</div> */}
       </div>
     </div>
 
@@ -875,7 +905,7 @@ el.addEventListener('mouseout', function (ev) {
     
     <form class="form-horizontal">
        
-      <div class="form-group">
+      <div class="form-group" >
         <div class="col-sm-12">
           <input style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} type="text" class="form-control" id="name" placeholder="NAME" name="name" value={name} onChange={(e)=>{setname(e.target.value)}} required></input>
         </div>
@@ -924,7 +954,7 @@ el.addEventListener('mouseout', function (ev) {
           </li></a>
         </ul>
 
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        {/* <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> */}
 
       </div>
     
