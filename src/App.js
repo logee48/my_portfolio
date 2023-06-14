@@ -376,77 +376,10 @@ console.log(abouth);
     {/*     page three   */}   
     <div class='new2' id='pro'>
 
-      <h1 id='projectheader' className='animation' data-aos='zoom-in'>My Projects</h1>
+      <h1 id='projectheader' className='animation' data-aos='zoom-in'>Projects</h1>
 
       {/*  box project */}
       <div class='projectsection'>
-        <div>
-  <ul>
-    <a href="#projectheader" onClick={fun1}><li>
-    <img src={portfolio}></img> 
-      <div class='info'>
-      <h1>Portfolio<br></br><p>React js</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun2}><li>
-    <img src={hasty}></img> 
-      <div class='info'>
-       <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun3}><li>
-        <img src={cex}></img>
-      <div class='info'>
-      <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun4}><li>
-    <img src={istat}></img>
-      <div class='info'>
-      <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun5}><li>
-    <img src={nine11}></img>
-      <div class='info'>
-      <h1>9 11<br></br><p>Unity | C#</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun6}><li>
-      <img src={hexalogo}></img>
-      <div class='info'>
-      <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun7}><li>
-    <img src={reddit}></img>
-      <div class='info'>
-      <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun8}><li> 
-      <img src={imgcon}></img>
-      <div class='info'>
-      <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun9} style={{textDecoration:"none"}}><li> 
-      <img src={drp}></img>
-      <div class='info'>
-      <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun10}><li>
-      <img src={gwn}></img>
-      <div class='info'>
-      <h1>The Game Without A Name<br></br><p>Python | pygame</p></h1>
-      </div>
-    </li></a>
-    
-  </ul>
-</div>
-        
-
         {/* popup-one */}
         <div id='popup1' style={{display: one ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun1}>close</button></div>
@@ -876,6 +809,74 @@ console.log(abouth);
           </div>
       </div>
         </div>
+        <div>
+  <ul>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={portfolio}></img> 
+      <div class='info'>
+      <h1>Portfolio<br></br><p>React js</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun2}><li>
+    <img src={hasty}></img> 
+      <div class='info'>
+       <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun3}><li>
+        <img src={cex}></img>
+      <div class='info'>
+      <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun4}><li>
+    <img src={istat}></img>
+      <div class='info'>
+      <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun5}><li>
+    <img src={nine11}></img>
+      <div class='info'>
+      <h1>9 11<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun6}><li>
+      <img src={hexalogo}></img>
+      <div class='info'>
+      <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun7}><li>
+    <img src={reddit}></img>
+      <div class='info'>
+      <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun8}><li> 
+      <img src={imgcon}></img>
+      <div class='info'>
+      <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun9} style={{textDecoration:"none"}}><li> 
+      <img src={drp}></img>
+      <div class='info'>
+      <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun10}><li>
+      <img src={gwn}></img>
+      <div class='info'>
+      <h1>The Game Without A Name<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    
+  </ul>
+</div>
+        
+
+        
 
 
 
@@ -897,7 +898,7 @@ console.log(abouth);
     <div id='cont'>
     <section id="contact">
   
-  <h1 class="section-header" style={{paddingTop:"80px"}}>Contact</h1>
+  <h1 id="section-header" style={{paddingTop:"80px"}} className='animation' data-aos='zoom-in'>Contact</h1>
   
   <div class="contact-wrapper">
   
@@ -942,17 +943,17 @@ console.log(abouth);
         </div>
 
         
-        <ul class="social-media-list">
-          <a href="https://www.github.com/logee48" target="_blank" class="contact-icon"><li>
+        <div class="social-media-list">
+          <a href="https://www.github.com/logee48" target="_blank" class="contact-icon"><div id="soi">
             <i class="fa fa-github" aria-hidden="true"></i>
-          </li></a>
+          </div></a>
           <a href="https://www.linkedin.com/in/logeshwaran-elumalai-a180b3249/" target="_blank" class="contact-icon">
-          <li><i class="fa fa-linkedin" aria-hidden="true"></i>
-          </li></a>
+          <div id="soi"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div></a>
           <a href="https://twitter.com/logeshwaranE1" target="_blank" class="contact-icon">
-          <li><i class="fa fa-twitter" aria-hidden="true"></i>
-          </li></a>
-        </ul>
+          <div id="soi"><i class="fa fa-twitter" aria-hidden="true"></i>
+          </div></a>
+        </div>
 
         {/* <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> */}
 
