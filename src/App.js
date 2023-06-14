@@ -90,6 +90,12 @@ el.addEventListener('mouseout', function (ev) {
     addClass( ev, this, 'out' ); 
 }, false);
 });
+const aboutheight = ()=>{
+  if(document.getElementById("disp").offsetHeight>window.screen.availHeight){
+    setabouth(document.getElementById("disp").offsetHeight)
+  }
+}
+aboutheight()
   },[])
   // const [test, settest] = useState(false)
   const [name, setname] = useState("")
@@ -294,41 +300,64 @@ el.addEventListener('mouseout', function (ev) {
 
 
 
+const aa = window.screen.availWidth;
+const bb = window.screen.availHeight;
+const [abouth,setabouth] = useState(bb);
 
-
-
-
-
-
-
+// console.log(document.getElementById("disp").offsetHeight);
+// console.log(bb);
+console.log(abouth);
   return (
     <div>
+      {/* <div>{aa}</div>
+      <div>{bb}</div> */}
       <div>
 
-    {/*     page one    */}    
+    {/*     page one    */}
     <div class='new' id='page'>
     <div class="headertags">
-      <a id='headd' href='#page'>logesh</a>
+      <a id='headd' href='#page' onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>logesh</a>
       <a id="header1" href='#abou'>About</a>
       <a id="header1" href="#pro">Project</a>
       <a id="header1" href='#cont'>Contact</a>
+      <div class="dropicon"><i class="fa fa-bars" aria-hidden="true" onClick={()=>{
+    if(document.getElementById("dropmenushit").style.display=="none"){
+    document.getElementById("dropmenushit").style.display="block"}
+    else{ document.getElementById("dropmenushit").style.display="none"}
+    }}></i></div>
     </div>
+  <div id="dropmenushit" style={{position:"fixed",display:"none",width:"100vw",backgroundColor:"white",fontSize:"50px",paddingTop:"100px", textAlign:"center",zIndex:"9"}}>
+      <a id="" href='#abou' style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>About</div></a>
+      <a id="" href="#pro" style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>Project</div></a>
+      <a id="" href='#cont' style={{color:"#C79552"}}><div onClick={()=>{document.getElementById("dropmenushit").style.display="none"}}>Contact</div></a>
+  </div>
+
+
+      {/* <div style={{display:"none"}}><i class="fa fa-bars" aria-hidden="true"></i></div> */}
+    
     <div class='header2'>
           <h1 id='fname' className='animation' data-aos='fade-in'>Hi i'm Logeshwaran Elumalai</h1>
           <h1 id='dname' className='animation' data-aos='fade-up'>Just a normal computer science student who likes to code for fun.</h1>
     </div>
     </div>
+    
+  
+
+
+
+
+
 
 
 
     {/*     page two    */}   
-    <div class='new1' id='abou'>
+    <div class='new1' id='abou' style={{height:{abouth}}}>
       <div id='about-header' className='animation' data-aos='zoom-in'>About me</div>
-      <div style={{display:'flex',columnCount:2, alignItems:"center", justifyItems:"center", marginTop:"10vh"}}>
+      <div id="image-flex">
         <div style={{padding:"50px"}}>
           <img src={pp} style={{borderRadius:"50%", width:"300px"}}></img>
         </div>
-        <div style={{padding:"100px"}}>
+        <div style={{padding:"100px"}} id="disp">
           <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
           <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
           <div>I'm mostly interested in game development and  I also do web development and app development</div>
@@ -339,6 +368,7 @@ el.addEventListener('mouseout', function (ev) {
           {/* <a href={resume} download>Click to download</a> */}
 
         </div>
+        {/* <div style={{zIndex:"100"}}>{document.getElementById("disp").offsetHeight}</div> */}
       </div>
     </div>
 
@@ -346,77 +376,10 @@ el.addEventListener('mouseout', function (ev) {
     {/*     page three   */}   
     <div class='new2' id='pro'>
 
-      <h1 id='projectheader' className='animation' data-aos='zoom-in'>My Projects</h1>
+      <h1 id='projectheader' className='animation' data-aos='zoom-in'>Projects</h1>
 
       {/*  box project */}
       <div class='projectsection'>
-        <div>
-  <ul>
-    <a href="#projectheader" onClick={fun1}><li>
-    <img src={portfolio}></img> 
-      <div class='info'>
-      <h1>Portfolio<br></br><p>React js</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun2}><li>
-    <img src={hasty}></img> 
-      <div class='info'>
-       <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun3}><li>
-        <img src={cex}></img>
-      <div class='info'>
-      <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun4}><li>
-    <img src={istat}></img>
-      <div class='info'>
-      <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun5}><li>
-    <img src={nine11}></img>
-      <div class='info'>
-      <h1>9 11<br></br><p>Unity | C#</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun6}><li>
-      <img src={hexalogo}></img>
-      <div class='info'>
-      <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun7}><li>
-    <img src={reddit}></img>
-      <div class='info'>
-      <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun8}><li> 
-      <img src={imgcon}></img>
-      <div class='info'>
-      <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun9} style={{textDecoration:"none"}}><li> 
-      <img src={drp}></img>
-      <div class='info'>
-      <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
-      </div>
-    </li></a>
-    <a href="#projectheader" onClick={fun10}><li>
-      <img src={gwn}></img>
-      <div class='info'>
-      <h1>The Game Without A Name<br></br><p>Python | pygame</p></h1>
-      </div>
-    </li></a>
-    
-  </ul>
-</div>
-        
-
         {/* popup-one */}
         <div id='popup1' style={{display: one ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun1}>close</button></div>
@@ -846,6 +809,74 @@ el.addEventListener('mouseout', function (ev) {
           </div>
       </div>
         </div>
+        <div>
+  <ul>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={portfolio}></img> 
+      <div class='info'>
+      <h1>Portfolio<br></br><p>React js</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun2}><li>
+    <img src={hasty}></img> 
+      <div class='info'>
+       <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun3}><li>
+        <img src={cex}></img>
+      <div class='info'>
+      <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun4}><li>
+    <img src={istat}></img>
+      <div class='info'>
+      <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun5}><li>
+    <img src={nine11}></img>
+      <div class='info'>
+      <h1>9 11<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun6}><li>
+      <img src={hexalogo}></img>
+      <div class='info'>
+      <h1>Hexaplay<br></br><p>Unity | C#</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun7}><li>
+    <img src={reddit}></img>
+      <div class='info'>
+      <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun8}><li> 
+      <img src={imgcon}></img>
+      <div class='info'>
+      <h1>Img-format converter<br></br><p>Python | PIL</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun9} style={{textDecoration:"none"}}><li> 
+      <img src={drp}></img>
+      <div class='info'>
+      <h1>dr.Predictor<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun10}><li>
+      <img src={gwn}></img>
+      <div class='info'>
+      <h1>The Game Without A Name<br></br><p>Python | pygame</p></h1>
+      </div>
+    </li></a>
+    
+  </ul>
+</div>
+        
+
+        
 
 
 
@@ -867,7 +898,7 @@ el.addEventListener('mouseout', function (ev) {
     <div id='cont'>
     <section id="contact">
   
-  <h1 class="section-header" style={{paddingTop:"80px"}}>Contact</h1>
+  <h1 id="section-header" style={{paddingTop:"80px"}} className='animation' data-aos='zoom-in'>Contact</h1>
   
   <div class="contact-wrapper">
   
@@ -875,7 +906,7 @@ el.addEventListener('mouseout', function (ev) {
     
     <form class="form-horizontal">
        
-      <div class="form-group">
+      <div class="form-group" >
         <div class="col-sm-12">
           <input style={{backgroundColor:"black",marginBottom:"20px", color:"white"}} type="text" class="form-control" id="name" placeholder="NAME" name="name" value={name} onChange={(e)=>{setname(e.target.value)}} required></input>
         </div>
@@ -912,19 +943,19 @@ el.addEventListener('mouseout', function (ev) {
         </div>
 
         
-        <ul class="social-media-list">
-          <a href="https://www.github.com/logee48" target="_blank" class="contact-icon"><li>
+        <div class="social-media-list">
+          <a href="https://www.github.com/logee48" target="_blank" class="contact-icon"><div id="soi">
             <i class="fa fa-github" aria-hidden="true"></i>
-          </li></a>
+          </div></a>
           <a href="https://www.linkedin.com/in/logeshwaran-elumalai-a180b3249/" target="_blank" class="contact-icon">
-          <li><i class="fa fa-linkedin" aria-hidden="true"></i>
-          </li></a>
+          <div id="soi"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div></a>
           <a href="https://twitter.com/logeshwaranE1" target="_blank" class="contact-icon">
-          <li><i class="fa fa-twitter" aria-hidden="true"></i>
-          </li></a>
-        </ul>
+          <div id="soi"><i class="fa fa-twitter" aria-hidden="true"></i>
+          </div></a>
+        </div>
 
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        {/* <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> */}
 
       </div>
     
