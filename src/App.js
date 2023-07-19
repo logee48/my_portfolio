@@ -1,6 +1,4 @@
 import './App.css';
-import charimg from './char.png';
-import img1 from './wall1.jpg';
 import cex from './images/cex.png';
 import hexalogo from './images/hexa.png';
 import reddit from './images/reddit.png';
@@ -13,8 +11,6 @@ import portfolio from './images/portfolio.png';
 import resume from './resume.pdf';
 import pp from './images/profilepic.png';
 import nine11 from './images/911.png';
-import test1 from './images/t1.png'
-import test4 from './images/t4.png'
 import p1i1 from './images/p1ss1.png'
 import p1i2 from './images/p1ss2.png'
 import p1i3 from './images/p1ss3.png'
@@ -39,8 +35,17 @@ import p9i3 from './images/p9ss3.png'
 import p10i1 from './images/p10ss1.png'
 import p10i2 from './images/p10ss2.png'
 import p10i3 from './images/p10ss3.png'
+import p12i1 from './images/p12ss1.png'
+import p12i2 from './images/p12ss2.png'
+import p12i3 from './images/p12ss3.png'
+import p12i4 from './images/p12ss4.png'
+import p12i5 from './images/p12ss5.png'
 import nine1 from './images/nine1.png'
 import nine2 from './images/nine2.png'
+import fguss from './images/f-guss.png'
+import secret1000 from './images/secrete-1000.png'
+import noteit from './images/noteit.png'
+import vhken from './images/vhken.png'
 import 'animate.css'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -111,6 +116,10 @@ aboutheight()
   const [eight, seteight] = useState(false)
   const [nine, setnine] = useState(false)
   const [ten, setten] = useState(false)
+  const [eleven, seteleven] = useState(false)
+  const [twelve, settwelve] = useState(false)
+  const [thirteen, setthirteen] = useState(false)
+  const [fourteen, setfourteen] = useState(false)
   const [popupdisplay1, setpopdisplay1] = useState(false)
   const db_fun=()=>{
     console.log("worksssss");
@@ -144,6 +153,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun2 = ()=>{
@@ -159,6 +172,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun3 = ()=>{
@@ -174,6 +191,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun4 = ()=>{
@@ -189,6 +210,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun5 = ()=>{
@@ -204,6 +229,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun6 = ()=>{
@@ -219,6 +248,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun7 = ()=>{
@@ -234,6 +267,10 @@ aboutheight()
       seteight(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun8 = ()=>{
@@ -249,6 +286,10 @@ aboutheight()
       setseven(false);
       setnine(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun9 = ()=>{
@@ -264,6 +305,10 @@ aboutheight()
       seteight(false);
       setseven(false);
       setten(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
     }
   }
   const fun10 = ()=>{
@@ -279,6 +324,86 @@ aboutheight()
       seteight(false);
       setnine(false);
       setseven(false);
+      seteleven(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
+    }
+  }
+  const fun11 = ()=>{
+    seteleven(!eleven);
+    if(eleven == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setseven(false);
+      setten(false);
+      settwelve(false);
+      setthirteen(false);
+      setfourteen(false);
+    }
+  }
+  const fun12 = ()=>{
+    settwelve(!twelve);
+    if(twelve == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setseven(false);
+      setten(false);
+      seteleven(false);
+      setthirteen(false);
+      setfourteen(false);
+    }
+  }
+  const fun13 = ()=>{
+    setthirteen(!thirteen);
+    if(thirteen == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setseven(false);
+      setten(false);
+      settwelve(false);
+      seteleven(false);
+      setfourteen(false);
+    }
+  }
+  const fun14 = ()=>{
+    setfourteen(!fourteen);
+    if(fourteen == true)
+    {
+      settwo(false);
+      setthree(false);
+      setfour(false);
+      setfive(false);
+      setsix(false);
+      setone(false);
+      seteight(false);
+      setnine(false);
+      setseven(false);
+      setten(false);
+      settwelve(false);
+      setthirteen(false);
+      seteleven(false);
     }
   }
 
@@ -361,7 +486,7 @@ console.log(abouth);
           <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
           <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
           <div>I'm mostly interested in game development and  I also do web development and app development</div>
-          <div>i have made few personal, school and college projects, check them in <a href="#pro">Project section</a></div>
+          <div>i have made few personal, school and college projects, check them in <a href="#pro">ProjectSection</a></div>
           {/* <div>here<br></br>download my resume</div>
           <div>**photo on the right or left depends on where the text is**</div> */}
           <div><a href={resume} download>download my resume</a></div>
@@ -809,12 +934,185 @@ console.log(abouth);
           </div>
       </div>
         </div>
+
+      {/* popup 11 */}
+      <div id='popup1' style={{display: eleven ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun11}>close</button></div>
+        <div>
+          <div class='popupheader'>Vh-Ken</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This game has a special place in my heart<br></br>
+                    # This was my very first software/game that i made<br></br>
+                    # Made this one for my class 12th computer science project
+                    </div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Mostly followed a youtube video</dd>
+                    <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+
+        {/* popup 12 */}
+        <div id='popup1' style={{display: twelve ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun12}>close</button></div>
+        <div>
+          <div class='popupheader'>Note-iT</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'90%'}}><img src={p12i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p12i2} alt='noen'></img></div>
+                    <div style={{height:'90%'}}><img src={p12i3} alt='noen'></img></div>
+                    <div style={{height:'90%'}}><img src={p12i4} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p12i5} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This game has a special place in my heart<br></br>
+                    # This was my very first software/game that i made<br></br>
+                    # Made this one for my class 12th computer science project
+                    </div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Mostly followed a youtube video</dd>
+                    <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+
+        {/* popup 13 */}
+        <div id='popup1' style={{display: thirteen ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun13}>close</button></div>
+        <div>
+          <div class='popupheader'>game without a name</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This game has a special place in my heart<br></br>
+                    # This was my very first software/game that i made<br></br>
+                    # Made this one for my class 12th computer science project
+                    </div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Mostly followed a youtube video</dd>
+                    <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
+        {/* popup 14 */}
+        <div id='popup1' style={{display: fourteen ? 'block' : 'none'}}>
+          <div id="popupclose"><button onClick={fun14}>close</button></div>
+        <div>
+          <div class='popupheader'>game without a name</div>
+          <div id="popupsubheader">
+            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+          </div>
+          <div id="popupdiv">
+            <div id="popupslider_test">
+              <div class='popupslider'>
+                  <AwesomeSlider>
+                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                  </AwesomeSlider>
+              </div></div>
+              <div style={{fontSize:'20px'}} id="popupdes">
+                <div id="popupdesleft">
+                  <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
+                    <div># This game has a special place in my heart<br></br>
+                    # This was my very first software/game that i made<br></br>
+                    # Made this one for my class 12th computer science project
+                    </div>
+                </div>
+                <div id="pop">
+                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                  {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
+                  <dl>
+                    {/* <dt># learnt concepts like:</dt> */}
+                    <dd>- Mostly followed a youtube video</dd>
+                    <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd>
+                  </dl>
+                </div>
+              </div>
+          </div>
+      </div>
+        </div>
+
+
         <div>
   <ul>
-    <a href="#projectheader" onClick={fun1}><li>
-    <img src={portfolio}></img> 
+    <a href="#projectheader" onClick={fun11}><li>
+    <img src={vhken}></img> 
       <div class='info'>
-      <h1>Portfolio<br></br><p>React js</p></h1>
+      <h1>VH-Ken<br></br><p>Python | Unity | Firebase</p></h1>
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun2}><li>
@@ -823,16 +1121,34 @@ console.log(abouth);
        <h1>Hasty-com<br></br><p>Javascript | HTML | css</p></h1>   
       </div>
     </li></a>
+    <a href="#projectheader" onClick={fun12}><li>
+    <img src={noteit}></img> 
+      <div class='info'>
+      <h1>Note-iT<br></br><p>MERN stack | JWT</p></h1>
+      </div>
+    </li></a>
     <a href="#projectheader" onClick={fun3}><li>
         <img src={cex}></img>
       <div class='info'>
       <h1>CEX 2.0<br></br><p>Reactjs | Firebase</p></h1>
       </div>
     </li></a>
+    <a href="#projectheader" onClick={fun13}><li>
+    <img src={secret1000}></img> 
+      <div class='info'>
+      <h1>secret-1000<br></br><p>Python | TKinter</p></h1>
+      </div>
+    </li></a>
     <a href="#projectheader" onClick={fun4}><li>
     <img src={istat}></img>
       <div class='info'>
       <h1>iStat<br></br><p>Reactjs | Python | Firebase</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun1}><li>
+    <img src={portfolio}></img> 
+      <div class='info'>
+      <h1>Portfolio<br></br><p>React js</p></h1>
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun5}><li>
@@ -851,6 +1167,12 @@ console.log(abouth);
     <img src={reddit}></img>
       <div class='info'>
       <h1>Reddit meme gen<br></br><p>Javascript | HTML | css</p></h1>
+      </div>
+    </li></a>
+    <a href="#projectheader" onClick={fun14}><li>
+    <img src={fguss}></img> 
+      <div class='info'>
+      <h1>F-Guss<br></br><p>React js</p></h1>
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun8}><li> 
