@@ -35,11 +35,17 @@ import p9i3 from './images/p9ss3.png'
 import p10i1 from './images/p10ss1.png'
 import p10i2 from './images/p10ss2.png'
 import p10i3 from './images/p10ss3.png'
+import p11i1 from './images/p11ss1.png'
 import p12i1 from './images/p12ss1.png'
 import p12i2 from './images/p12ss2.png'
 import p12i3 from './images/p12ss3.png'
 import p12i4 from './images/p12ss4.png'
 import p12i5 from './images/p12ss5.png'
+import p13i1 from './images/p13ss1.png'
+import p13i2 from './images/p13ss2.png'
+import p13i3 from './images/p13ss3.png'
+import p14i1 from './images/p14ss1.png'
+import p14i2 from './images/p14ss2.png'
 import nine1 from './images/nine1.png'
 import nine2 from './images/nine2.png'
 import fguss from './images/f-guss.png'
@@ -483,9 +489,9 @@ console.log(abouth);
           <img src={pp} style={{borderRadius:"50%", width:"300px"}}></img>
         </div>
         <div style={{padding:"100px"}} id="disp">
-          <div>hi there, my name is Logeshwaran Elumalai<br></br>you can call me logesh or jesper</div>
-          <div>so I'm pre-final year college student in Rajalakshmi Engineergin college and i'll graduate by may 2025</div>
-          <div>I'm mostly interested in game development and  I also do web development and app development</div>
+          <div>hi there, my name is Logeshwaran Elumalai<br></br>you can just call me logesh</div>
+          <div>so I'm pre-final year college student in Rajalakshmi Engineergin college in Chennai and i'll graduate by may 2025</div>
+          <div>I'm mostly interested in game development and I also do web development and app development</div>
           <div>i have made few personal, school and college projects, check them in <a href="#pro">ProjectSection</a></div>
           {/* <div>here<br></br>download my resume</div>
           <div>**photo on the right or left depends on where the text is**</div> */}
@@ -940,17 +946,16 @@ console.log(abouth);
           <div id="popupclose"><button onClick={fun11}>close</button></div>
         <div>
           <div class='popupheader'>Vh-Ken</div>
+          <div style={{display:"flex",justifyContent:"center"}}>**still working on this project**</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/vh_ken" target='_blank'>github link</a></div>
             {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p11i1} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -984,7 +989,7 @@ console.log(abouth);
         <div>
           <div class='popupheader'>Note-iT</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/noteIt" target='_blank'>github link</a></div>
             {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
@@ -1036,9 +1041,9 @@ console.log(abouth);
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p13i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p13i2} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p13i3} alt='noen'></img></div>
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -1069,18 +1074,18 @@ console.log(abouth);
         <div id='popup1' style={{display: fourteen ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun14}>close</button></div>
         <div>
-          <div class='popupheader'>game without a name</div>
+          <div class='popupheader'>f-guss</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
-            {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
+            <div><a style={{color:'white'}} href="https://github.com/logee48/f-guss" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://f-guss.netlify.app/" target='_blank'>live link</a></div>
           </div>
           <div id="popupdiv">
             <div id="popupslider_test">
               <div class='popupslider'>
                   <AwesomeSlider>
-                    <div style={{height:'100%'}}><img src={p10i1} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i2} alt='noen'></img></div>
-                    <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p14i1} alt='noen'></img></div>
+                    <div style={{height:'100%'}}><img src={p14i2} alt='noen'></img></div>
+                    {/* <div style={{height:'100%'}}><img src={p10i3} alt='noen'></img></div> */}
                   </AwesomeSlider>
               </div></div>
               <div style={{fontSize:'20px'}} id="popupdes">
@@ -1172,7 +1177,7 @@ console.log(abouth);
     <a href="#projectheader" onClick={fun14}><li>
     <img src={fguss}></img> 
       <div class='info'>
-      <h1>F-Guss<br></br><p>React js</p></h1>
+      <h1>f-Guss<br></br><p>React js</p></h1>
       </div>
     </li></a>
     <a href="#projectheader" onClick={fun8}><li> 

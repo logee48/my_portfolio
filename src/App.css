@@ -9,7 +9,6 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
 
-
 body{
   overflow-x: hidden;
   /* overflow-y: hidden; */
@@ -943,6 +942,14 @@ hr {
 {
   
 }
+/* @media screen and (max-width:1000px) {
+  #image-flex
+  {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 40px;
+  }
+} */
 @media screen and (max-width:1000px) {
   .dropicon{
     display: block;
