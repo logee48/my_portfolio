@@ -961,19 +961,19 @@ console.log(abouth);
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># This game has a special place in my heart<br></br>
-                    # This was my very first software/game that i made<br></br>
-                    # Made this one for my class 12th computer science project
+                    <div># Because it is a cool game.<br></br>
+                    # Can you imagine where you can control your game character using hand movement, here it is.<br></br>
+                    {/* # Made this one for my class 12th computer science project */}
                     </div>
                 </div>
                 <div id="pop">
-                <div style={{fontSize:'30px',padding:'20px'}}>what i learnt during making this project?</div>
+                <div style={{fontSize:'30px',padding:'20px'}}>how i made this project and what i learnt during making this project?</div>
                   {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
                   <dl>
                     {/* <dt># learnt concepts like:</dt> */}
-                    <dd>- Mostly followed a youtube video</dd>
-                    <dd>- Leant more about pygame librarie</dd>
-                    <dd>- how to create button in pygame</dd>
+                    <dd>- For traing model for recognizing user hand gesture i use tensorflow and mediapipe ( <a href='https://youtu.be/Ui85SVJsRf8' target='_blank'>video ref</a> )</dd>
+                    <dd>- Python code will recognize the hand gesture and update the player state in firebase real-time database, and UNITY pick up the data from firebase and player moves accordingly</dd>
+                    {/* <dd>- how to create button in pygame</dd> */}
                   </dl>
                 </div>
               </div>
@@ -1006,9 +1006,9 @@ console.log(abouth);
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># This game has a special place in my heart<br></br>
-                    # This was my very first software/game that i made<br></br>
-                    # Made this one for my class 12th computer science project
+                    <div># Every developers should have a full-stack ( frontend-and-backend ) web project in their sleeve, so i made one for me.<br></br>
+                    # It is a simple notes taking website with proper authentication.<br></br>
+                    {/* # Made this one for my class 12th computer science project */}
                     </div>
                 </div>
                 <div id="pop">
@@ -1016,9 +1016,11 @@ console.log(abouth);
                   {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
                   <dl>
                     {/* <dt># learnt concepts like:</dt> */}
-                    <dd>- Mostly followed a youtube video</dd>
-                    <dd>- Leant more about pygame librarie</dd>
-                    <dd>- how to create button in pygame</dd>
+                    <dd>- Made this one with MERN stack and JWT ( JSON web tokens )</dd>
+                    <dd>- Learnt alot about creating servers.</dd>
+                    <dd>- MongoDB connectivity with NODE</dd>
+                    <dd>- connecting Fontend with Backend</dd>
+                    <dd>- How to make auth system using JWT (It is thing which provide a unique tokens when a user login using their credientials, using those tokens users can access the website.)</dd>
                   </dl>
                 </div>
               </div>
@@ -1032,9 +1034,9 @@ console.log(abouth);
         <div id='popup1' style={{display: thirteen ? 'block' : 'none'}}>
           <div id="popupclose"><button onClick={fun13}>close</button></div>
         <div>
-          <div class='popupheader'>game without a name</div>
+          <div class='popupheader'>Secret - 1000</div>
           <div id="popupsubheader">
-            <div><a style={{color:'white'}} href="https://github.com/logee48/the-game-without-name" target='_blank'>github link</a></div>
+            <div><a style={{color:'white'}} href="https://github.com/logee48/secret-1000" target='_blank'>github link</a></div>
             {/* <div><a style={{color:'white'}} href="#page" target='_blank'>live link</a></div> */}
           </div>
           <div id="popupdiv">
@@ -1049,9 +1051,10 @@ console.log(abouth);
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># This game has a special place in my heart<br></br>
-                    # This was my very first software/game that i made<br></br>
-                    # Made this one for my class 12th computer science project
+                    <div># It is one of the coolest project that i have made.<br></br>
+                    # Imagine secretly inseting a message in image file.<br></br>
+                    # Here you can embed a secret message upto 1000 characters and send it to your friend, your friend can use decryptor to read the message from image file.<br></br>
+                    # When you compress the image that secret message will be gone.
                     </div>
                 </div>
                 <div id="pop">
@@ -1059,9 +1062,9 @@ console.log(abouth);
                   {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
                   <dl>
                     {/* <dt># learnt concepts like:</dt> */}
-                    <dd>- Mostly followed a youtube video</dd>
-                    <dd>- Leant more about pygame librarie</dd>
-                    <dd>- how to create button in pygame</dd>
+                    <dd>- Learnt basic python stuff such as</dd>
+                    <dd>-> read and writing file</dd>
+                    <dd>-> Tkinter (ui thing)</dd>
                   </dl>
                 </div>
               </div>
@@ -1091,9 +1094,9 @@ console.log(abouth);
               <div style={{fontSize:'20px'}} id="popupdes">
                 <div id="popupdesleft">
                   <div style={{fontSize:'30px',padding:'20px'}}>why i made this project?</div>
-                    <div># This game has a special place in my heart<br></br>
-                    # This was my very first software/game that i made<br></br>
-                    # Made this one for my class 12th computer science project
+                    <div># For some reason, i love guessing country flags and capitals.<br></br>
+                    # So i created my own flag guessing game.<br></br>
+                    {/* # Made this one for my class 12th computer science project */}
                     </div>
                 </div>
                 <div id="pop">
@@ -1101,9 +1104,9 @@ console.log(abouth);
                   {/* ~ during building this project i was still learning react js, so mostly Reactjs */}
                   <dl>
                     {/* <dt># learnt concepts like:</dt> */}
-                    <dd>- Mostly followed a youtube video</dd>
-                    <dd>- Leant more about pygame librarie</dd>
-                    <dd>- how to create button in pygame</dd>
+                    <dd>- Just some basic Javascript.</dd>
+                    {/* <dd>- Leant more about pygame librarie</dd>
+                    <dd>- how to create button in pygame</dd> */}
                   </dl>
                 </div>
               </div>
